@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/projects">Projects</a>
+			<a href="https://github.com/wr4ng/">Github</a>
+		</nav>
+    </header>
+    <div class="container content">
+        {{ block "main" . }}{{ end }}
+    </div>
+    <footer>
+		<small>
+			&copy; 2024 Mads Christian Wrang Nielsen
+		</small>
+    </footer>
+</body>
+</html>

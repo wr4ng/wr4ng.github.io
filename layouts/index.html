@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div>
+	<img src="/images/mads-nielsen.jpg" alt="Profile Image" class="profile-image">
+</div>
+
+{{ .Content }}
+
+<h2>Recent Projects</h2>
+{{ range .Site.RegularPages }}
+	{{ if eq .Section "projects" }}
+		<div>
+			<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+			<p>{{ .Params.description }}</p>
+		</div>
+	{{ end }}
+{{ end }}
+
+{{ end }}
