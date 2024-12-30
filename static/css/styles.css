@@ -22,6 +22,19 @@ b {
   color: #eee;
 }
 
+h2 {
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+
 a {
   color: #8cc2dd;
 }
@@ -70,6 +83,17 @@ content {
   line-height: 1.6;
 }
 
+div.container.content {
+  min-height: calc(100vh - 125px);
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  margin-bottom: -10px;
+  padding: 0px;
+}
+
 table {
   width: 100%;
 }
@@ -112,11 +136,6 @@ blockquote {
   font-style: italic;
 }
 
-footer {
-  padding: 25px;
-  text-align: center;
-}
-
 .helptext {
   color: #aaa;
   font-size: small;
@@ -125,6 +144,10 @@ footer {
 .errorlist {
   color: #eba613;
   font-size: small;
+}
+
+ul {
+  margin-top: 0px;
 }
 
 /* blog posts */

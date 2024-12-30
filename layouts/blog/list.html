@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <h2>Projects</h2>
+    {{ range .Pages }}
+        <div>
+            <h3><a href="{{ .RelPermalink }}">{{ time.Format "2006-01-02" .Date }} - {{ .Title }}</a></h3>
+            <p>{{ .Params.description }}</p>
+        </div>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <h2 class="header">{{ .Title }}</h2>
+	<div class="under-header">
+		{{ if .Params.github }}
+		<a href="{{ .Params.github }}">View on GitHub</a>
+		{{ end }}
+		<p class="date">{{ time.Format "2006-01-02" .Date }}</p>
+	</div>
+    <div class="chip-container">
+        {{ range .Params.technologies }}
+		<span class="chip chip-{{ lower . }}">{{ . }}</span>
+        {{ end }}
+    </div>
+    <div>
+        {{ .Content }}
+    </div>
+    <p><a href="/">Back to Home</a></p>
+{{ end }}

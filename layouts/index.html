@@ -1,19 +1,27 @@
 {{ define "main" }}
+	<div>
+		<img src="/images/mads-nielsen.jpg" alt="Profile Image" class="profile-image">
+	</div>
 
-<div>
-	<img src="/images/mads-nielsen.jpg" alt="Profile Image" class="profile-image">
-</div>
+	{{ .Content }}
 
-{{ .Content }}
-
-<h2>Recent Projects</h2>
-{{ range .Site.RegularPages }}
-	{{ if eq .Section "projects" }}
-		<div>
-			<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-			<p>{{ .Params.description }}</p>
-		</div>
+	<h2>Recent projects</h2>
+	{{ range .Site.RegularPages }}
+		{{ if eq .Section "projects" }}
+			<div>
+		<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
+				<p>{{ .Params.description }}</p>
+			</div>
+		{{ end }}
 	{{ end }}
-{{ end }}
 
+	<h2>Recent blogposts</h2>
+	{{ range .Site.RegularPages }}
+		{{ if eq .Section "blog" }}
+			<div>
+				<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
+				<p>{{ .Params.description }}</p>
+			</div>
+		{{ end }}
+	{{ end }}
 {{ end }}
