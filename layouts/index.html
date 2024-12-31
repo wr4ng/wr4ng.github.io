@@ -6,22 +6,24 @@
 	{{ .Content }}
 
 	<h2>Recent projects</h2>
-	{{ range .Site.RegularPages }}
-		{{ if eq .Section "projects" }}
-			<div>
-		<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
-				<p>{{ .Params.description }}</p>
-			</div>
-		{{ end }}
+	{{ range first 3 (where .Site.RegularPages.ByDate "Section" "projects") }}
+		<div>
+			<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
+			<p>{{ .Params.description }}</p>
+		</div>
+	{{ end }}
+	{{ if gt (len (where .Site.RegularPages.ByDate "Section" "projects")) 3 }}
+		<a href="/projects">View All</a>
 	{{ end }}
 
 	<h2>Recent blogposts</h2>
-	{{ range .Site.RegularPages }}
-		{{ if eq .Section "blog" }}
-			<div>
-				<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
-				<p>{{ .Params.description }}</p>
-			</div>
-		{{ end }}
+	{{ range first 3 (where .Site.RegularPages.ByDate "Section" "blog") }}
+		<div>
+			<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
+			<p>{{ .Params.description }}</p>
+		</div>
+	{{ end }}
+	{{ if gt (len (where .Site.RegularPages.ByDate "Section" "blog")) 3 }}
+		<a href="/blog">View All</a>
 	{{ end }}
 {{ end }}
