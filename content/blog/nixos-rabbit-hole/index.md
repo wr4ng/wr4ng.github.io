@@ -40,9 +40,11 @@ And to be honest, I ran into *4.b.* a lot. The `nix` language used to configure 
 <p style="color: red;">TODO: Refactoring into flakes + modules. Getting to know the nix language. Use example module.</p>
 
 ## The Result
+My resulting config is available at https://github.com/wr4ng/nixos. It is not quite *there* yet, but that is probably the blessing and the curse of using NixOS. Below is a screenshot of my resulting setup:
 ![screenshot of final NixOS setup](./screenshot.png)
 {.rounded-corners .drop-shadow}
 
+## Conclusion
 One of the things I like most about NixOS is that I know that any problem I encounter and solve is *declaratively* solved. Meaning, using the same config, I should never run into that problem again. With my previous arch setup, there were times where I would run into a problem, google-fu my way to a solution requiring editing `etc/.../some-file` and/or running `some-command --xyz` and the problem is solved. However, when I run into the problem again in the case of my home PC or setting up a new device, I probably didn't document how I solved it and have to find the solution again. I can probably find the solution faster the second time around, however my experience is that the number of these small tweaks piles up, and I don't want to have to document all of them to be sure I can get back to the same setup.
 
 Using NixOS it's almost as if solving the problem and documenting it is one and the same. In Nix, it would look like:
@@ -54,5 +56,3 @@ some-program = {
 };
 ...
 ```
-
-## Conclusion
