@@ -336,3 +336,24 @@ p.info {
 .drop-shadow img, pre {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* Layout */
+#reading-progress {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#reading-progress-fill {
+    height: 3px;
+	border-radius: 3px;
+    width: 0;
+	/* Theme */
+    -webkit-transition: width 100ms ease;
+    -o-transition: width 100ms ease;
+    transition: width 100ms ease;
+    background-color: #8CC2DD;
+}
