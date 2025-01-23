@@ -2,7 +2,7 @@
     <h1 class="header">{{ .Title }}</h1>
 	<div class="under-header">
 		{{ if .Params.github }}
-		<a href="{{ .Params.github }}">View on GitHub</a>
+		<p><a href="{{ .Params.github }}">View on GitHub</a></p>
 		{{ end }}
 		<p class="info">{{ time.Format "2006-01-02" .Date }}</p>
 	</div>
@@ -14,5 +14,6 @@
     <div>
         {{ .Content }}
     </div>
+    <p><a href="#top">Back to top</a></p>
     <p><a href="/">Back to Home</a></p>
 {{ end }}
