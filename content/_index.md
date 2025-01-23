@@ -3,7 +3,7 @@ title = "wr4ng's portfolio"
 +++
 
 ## About Me
-Hi! I'm Mads Wrang, currently pursuing a BSc in Software Technology at DTU. Welcome to my portfolio :))
+Hi! I'm Mads Wrang, pursuing a BSc in Software Technology at DTU. Welcome to my portfolio :))
 
 I'm currently working as a Student (Software) Engineer at [Lunar](https://lunar.app) ([LinkedIn](https://www.linkedin.com/company/lunarbank/)),
 working primarily with `golang` microservices in the domain of international payments.

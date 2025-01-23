@@ -1,6 +1,6 @@
 # Portfolio
 
-My portfolio written using `hugo`.
+My portfolio and blog created using `hugo`. Deployed through Github Pages.
 
 # Nix shell
 

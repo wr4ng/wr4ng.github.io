@@ -6,7 +6,7 @@
 	{{ .Content }}
 
 	<h2>Recent projects</h2>
-	{{ range first 3 (where .Site.RegularPages.ByDate "Section" "projects") }}
+	{{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "projects") }}
 		<div>
 			<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
 			<p>{{ .Params.description }}</p>
@@ -17,7 +17,7 @@
 	{{ end }}
 
 	<h2>Recent blogposts</h2>
-	{{ range first 3 (where .Site.RegularPages.ByDate "Section" "blog") }}
+	{{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog") }}
 		<div>
 			<h3><a href="{{ .RelPermalink }}">{{ .Title }} ({{ time.Format "2006-01-02" .Date }})</a></h3>
 			<p>{{ .Params.description }}</p>
