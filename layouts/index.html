@@ -13,7 +13,7 @@
 		</div>
 	{{ end }}
 	{{ if gt (len (where .Site.RegularPages.ByDate "Section" "projects")) 3 }}
-		<a href="/projects">View All</a>
+		<a href="/projects">> View All</a>
 	{{ end }}
 
 	<h2>Recent blogposts</h2>
@@ -24,6 +24,6 @@
 		</div>
 	{{ end }}
 	{{ if gt (len (where .Site.RegularPages.ByDate "Section" "blog")) 3 }}
-		<a href="/blog">View All</a>
+		<a href="/blog">> View All</a>
 	{{ end }}
 {{ end }}

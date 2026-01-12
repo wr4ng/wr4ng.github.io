@@ -1,9 +1,10 @@
 +++
-title = "wr4ng's portfolio"
+title = "Mads Wrang"
 +++
 
 ## About Me
-Hi! I'm Mads Wrang, pursuing a BSc in Software Technology at DTU. Welcome to my portfolio :))
+Hi! I am Mads Wrang, currently pursuing a MSc in Computer Science and Engineering at [The Technical University of Denmark](https://www.dtu.dk/english/) (DTU).
+I am also currently working part-time as a Student Software Engineer at [The LEGO Group](https://www.linkedin.com/company/lego-group/).
 
 ## Contact Info
 - Email: madscwn@gmail.com
