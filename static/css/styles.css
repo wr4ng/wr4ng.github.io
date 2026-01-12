@@ -337,6 +337,10 @@ p.info {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+.width-two-thirds img {
+  width: 66%;
+}
+
 /* Layout */
 #reading-progress {
     position: fixed;
