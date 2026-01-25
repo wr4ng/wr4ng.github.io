@@ -67,10 +67,10 @@ root@jellyfin:~# cat /etc/group | grep 'render'
 render:x:992:jellyfin
 ```
 When can then passthrough the iGPU by adding a *Device Passthrough* under *Resources* of the LXC with the following options:
-| **Option** | **Value** |
-| - | - |
+| **Option**      | **Value**             |
+| --------------- | --------------------- |
 | **Device Path** | `/dev/dri/renderD128` |
-| **GID in CT** | `992` |
+| **GID in CT**   | `992`                 |
 
 We can then verify the ownership of the `renderD128` device withing the LXC:
 ```shell
@@ -123,3 +123,5 @@ will pass through to a HomeAssistant container.
 I am very happy with with the result. It is much easier to work with the network gear mounted like this instead of devices lying in a giant budle (and very much a fire-hazard...). 
 There is still much to do but this is a great starting point for adding some more services and starting on the HomeAssistant rabbit hole.
 
+![Network diagram](./homelab-diagram.drawio.png)
+{ .rounded-corners .drop-shadow .width-two-thirds }
