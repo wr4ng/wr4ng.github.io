@@ -1,12 +1,12 @@
 # Portfolio
 
-My portfolio and blog created using `hugo`. Deployed through Github Pages.
+My portfolio and blog created using `zola`. Deployed through Github Pages.
 
 # Nix shell
 
-Dependencies (only `hugo`) needed to run the project are declared
-in `shell.nix`. To use:
+Dependencies needed to run the project are declared in `flake.nix`.
+To use:
 ```shell
-$ nix-shell
-[nix-shell]$ hugo serve
+$ nix develop
+(nix-shell)$ zola serve
 ```

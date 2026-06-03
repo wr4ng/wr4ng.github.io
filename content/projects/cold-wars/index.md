@@ -2,8 +2,10 @@
 title = "Cold Wars: Return of the Emperor"
 date = 2025-01-23
 description = "A Unity multiplayer game using tuple-spaces for communication"
-technologies = ["Unity", "C#"]
+
+[extra]
 github = "https://github.com/wr4ng/cold-wars-return-of-the-emperor"
+technologies = ["Unity", "C#"]
 +++
 
 A multiplayer game built for the DTU (Technical University of Denmark) course
@@ -18,11 +20,10 @@ Player are placed randomly in a randomly generated maze, and can move around and
 a new maze is generated and everyone respawns.
 
 ![Screenshot of Cold Wars in-game](./ingame-screenshot.png)
-{.rounded-corners .drop-shadow}
 
 The game utilizes [tuple spaces](https://en.wikipedia.org/wiki/Tuple_space) to communicate between
 the host and clients. Messages use tuples of the form `(string, byte[])` where the first element denote
 the message's type, and the second the parameters passed along with the message. This allowed us
 to send arbitrary parameters and still use type-matching to fetch tuples from the tuple-spaces.
 
-**Demo:** https://www.youtube.com/watch?v=KURd3KKwY5s
+**Demo:** [https://www.youtube.com/watch?v=KURd3KKwY5s](https://www.youtube.com/watch?v=KURd3KKwY5s)

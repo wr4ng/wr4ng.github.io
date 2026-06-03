@@ -1,0 +1,6 @@
+{% set width = width | default(value=0) %}
+{% set height = height | default(value=0) %}
+{% set alt = alt | default(value="") %}
+{% set format = format | default(value="auto") %}
+{% set image = resize_image(path=page.colocated_path ~ path, width=width, height=height, op=op, format=format) %}
+<img src="{{ image.url }}" alt="{{ alt }}"/>

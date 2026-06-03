@@ -1,12 +1,6 @@
 +++
-title = "Projects"
+title = "projects"
+sort_by = "date"
+template = "projects.html"
+page_template = "project-page.html"
 +++
-
-## Projects
-
-{{ range .Pages }}
-<div>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <p>{{ .Params.description }}</p>
-</div>
-{{ end }}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>wrang.dev</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <script src="/js/reading-progress.js"></script>
+  <script src="/js/copy-code.js"></script>
+  <!--TODO: Have a local version?-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="wrang.dev logo">
+    </a>
+    <a href="/">home</a>
+      <a href="/blog">blog</a>
+      <a href="/projects">projects</a>
+      <a href="https://github.com/wr4ng/">github</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock content %}
+    </div>
+  </section>
+  <footer>
+    <small>
+      &copy; 2026 Mads Christian Wrang Nielsen
+    </small>
+  </footer>
+</body>
+
+</html>

@@ -3,6 +3,8 @@ title = "climb.it"
 date = 2023-06-20
 description = "Climbing/bouldering companion app using Flutter and Firebase."
 technologies = ["Flutter", "Firebase"]
+
+[extra]
 github = "https://github.com/Skysub/climb.it"
 +++
 
