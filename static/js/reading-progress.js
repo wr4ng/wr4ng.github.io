@@ -1,7 +1,7 @@
 document.addEventListener('scroll', function(e) {
 	const readingProgress = document.querySelector('#reading-progress-fill');
 	if (readingProgress == null) {
-		console.log("could not find reading-progress-fill")
+		return;
 	}
 	else {
 		const footerHeight = 0;

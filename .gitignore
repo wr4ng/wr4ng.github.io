@@ -1,9 +1,2 @@
-# Generated files by hugo
-/public/
-
-# Temporary lock file while building
-/.hugo_build.lock
-
-# direnv
-.direnv/
-.envrc
+public
+static/processed_images

@@ -1,8 +1,7 @@
 +++
-title = "Homelab revamp - LabRax"
+title = "Homelab revamp (LabRax)"
 date = 2026-01-12
 description = "Getting back into homelabbing with a 3D-printed rack!"
-github = ""
 +++
 
 ## LabRax 10-inch rack
@@ -12,7 +11,7 @@ but after aquiring a 3D-printer (Creality Ender-3 V3 KE), the dangerous time-and
 
 And that is when I stumbled upon the [LabRax](https://makerworld.com/en/collections/5813742-lab-rax) project by *mklements*.
 
-> *Lab Rax is a fully 3D printable, modular 10-inch server rack for homelabs* - **mklements**
+> *"Lab Rax is a fully 3D printable, modular 10-inch server rack for homelabs"* - **mklements**
 
 I have always found rack-hardware cool to look at, but at the same time it seemed so far off from consumer hardware,
 both in terms of price and space usage, that I never looked thought to look more into rack setups for a homelab.
@@ -22,7 +21,6 @@ However, the 10-inch size makes it way more reasonable to store, and most of the
 It took quite a while to print, and I had to use DTU's 3D-printers for the largest parts as they did not fit on my printer, but I am very pleased with the result!
 
 ![LabRax](./labrax.jpg)
-{ .rounded-corners .drop-shadow .width-two-thirds }
 
 And then for what is actually in this new homelab? It is *very* limited indeed. I currently have a Raspberry Pi 4 (8 GB), a UniFi USW Flex Mini switch
 and a patch panel to make the cable management much cleaner (from the front :)). Below is the list of 3D printed mounts and panels I currently have in the rack:
@@ -115,13 +113,10 @@ I have experience File Explorer still crashing when trying to access a mapped *N
 ### Raspberry Pi
 The Raspberry Pi is running Raspberry Pi OS Lite. All applications on this system will be run using docker (https://docs.docker.com/engine/install/debian/#install-using-the-repository).
 
-Currently I am only running [`wg-easy`](https://github.com/wg-easy/wg-easy), which runs a Wireguard VPN server and exposes a WebUI to manage user configurations.
-I am planning on running HomeAssistant, and have purchased a [Sonoff Zigbee 3.0 USB dongle](https://www.amazon.de/ZBDongle-EFR32MG21-Coordinator-Assistant-Zigbee2MQTT/dp/B0B6P22YJC/) which I
-will pass through to a HomeAssistant container.
+Currently I am only running [`wg-easy`](https://github.com/wg-easy/wg-easy), which runs a Wireguard VPN server and exposes a WebUI to manage user configurations. I am planning on running HomeAssistant, and have purchased a [Sonoff Zigbee 3.0 USB dongle](https://www.amazon.de/ZBDongle-EFR32MG21-Coordinator-Assistant-Zigbee2MQTT/dp/B0B6P22YJC/) which I plan on passing through to a HomeAssistant container.
 
 ## Conclusion
 I am very happy with with the result. It is much easier to work with the network gear mounted like this instead of devices lying in a giant budle (and very much a fire-hazard...). 
 There is still much to do but this is a great starting point for adding some more services and starting on the HomeAssistant rabbit hole.
 
 ![Network diagram](./homelab-diagram.drawio.png)
-{ .rounded-corners .drop-shadow .width-two-thirds }

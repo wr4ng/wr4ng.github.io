@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("pre").forEach((codeBlock) => {
     // Create the copy button
     const copyButton = document.createElement("button");
-    copyButton.innerHTML = "Copy";
+    copyButton.innerHTML = "copy";
     copyButton.className = "copy-button";
-    copyButton.title = "Copy to clipboard";
+    copyButton.title = "copy block to clipboard";
 
+    //TODO: Add to styles instead
     // Add the button to the code block
     codeBlock.style.position = "relative";
     copyButton.style.position = "absolute";
@@ -18,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
     copyButton.addEventListener("click", () => {
       const codeText = codeBlock.querySelector("code").innerText;
       navigator.clipboard.writeText(codeText).then(() => {
-        copyButton.textContent = "Copied!";
+        copyButton.textContent = "copied!";
         setTimeout(() => {
-          copyButton.innerHTML = "Copy" ;
+          copyButton.innerHTML = "copy" ;
         }, 2000);
       });
     });

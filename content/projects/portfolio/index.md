@@ -1,9 +1,11 @@
 +++
-title = "Portfolio & Blog"
+title = "TODO: Portfolio & Blog"
 date = 2024-08-08
 description = "My personal portfolio and blog built using hugo, hosted on Github Pages."
-technologies = ["hugo"]
+
+[extra]
 github = "https://github.com/wr4ng/wr4ng.github.io"
+technologies = ["zola"]
 +++
 
 As a way to help myself document projects and technical adventures, I've created this blog.
