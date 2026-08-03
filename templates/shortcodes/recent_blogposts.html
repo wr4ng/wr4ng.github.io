@@ -1,9 +1,0 @@
-{% set blog = get_section(path="blog/_index.md") %}
-<ul>
-  {% for page in blog.pages | slice(end=3) %}
-  <li style="margin-top: 0.75em;">
-	  <strong><a href="{{ page.permalink | safe }}">{{ page.date }} - {{ page.title }}</a></strong>
-	  <p>{{ page.description }}</p>
-  </li>
-  {% endfor %}
-</ul>

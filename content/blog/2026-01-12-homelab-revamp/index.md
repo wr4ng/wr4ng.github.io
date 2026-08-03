@@ -25,9 +25,9 @@ It took quite a while to print, and I had to use DTU's 3D-printers for the large
 And then for what is actually in this new homelab? It is *very* limited indeed. I currently have a Raspberry Pi 4 (8 GB), a UniFi USW Flex Mini switch
 and a patch panel to make the cable management much cleaner (from the front :)). Below is the list of 3D printed mounts and panels I currently have in the rack:
 
-- **1U Unifi UWS Flex Mini mount with keystone:** https://www.printables.com/model/1210493-10-inch-rack-unifi-usw-flex-mini
-- **1U 2 x Raspberry Pi mount:** https://www.printables.com/model/1185545-raspberry-pi-2b3b4b5b-10-inch-rack-mount
-- **1U 10 port keystone patch panel:** https://www.printables.com/model/1190494-10-inch-keystone-patch-panel-with-label
+- **1U Unifi UWS Flex Mini mount with keystone:** <br> [https://www.printables.com/model/1210493-10-inch-rack-unifi-usw-flex-mini](https://www.printables.com/model/1210493-10-inch-rack-unifi-usw-flex-mini)
+- **1U 2 x Raspberry Pi mount:** <br> [https://www.printables.com/model/1185545-raspberry-pi-2b3b4b5b-10-inch-rack-mount](https://www.printables.com/model/1185545-raspberry-pi-2b3b4b5b-10-inch-rack-mount)
+- **1U 10 port keystone patch panel:** <br> [https://www.printables.com/model/1190494-10-inch-keystone-patch-panel-with-label](https://www.printables.com/model/1190494-10-inch-keystone-patch-panel-with-label)
 
 Besides the rack I still have my media server. The reason I stopped using it was because running it 24/7 was overkill in terms of my usage,
 and I could turn it off remotely, but not on, meaning it was never on when I wanted it to be. This friction was the reason it was ultimately demoted to the closed...
@@ -65,10 +65,10 @@ root@jellyfin:~# cat /etc/group | grep 'render'
 render:x:992:jellyfin
 ```
 When can then passthrough the iGPU by adding a *Device Passthrough* under *Resources* of the LXC with the following options:
-| **Option**      | **Value**             |
-| --------------- | --------------------- |
-| **Device Path** | `/dev/dri/renderD128` |
-| **GID in CT**   | `992`                 |
+| **Option**  | **Value**             |
+| ----------- | --------------------- |
+| Device Path | `/dev/dri/renderD128` |
+| GID in CT   | `992`                 |
 
 We can then verify the ownership of the `renderD128` device withing the LXC:
 ```shell
