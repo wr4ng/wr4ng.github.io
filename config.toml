@@ -13,7 +13,7 @@ compile_sass = true
 build_search_index = false
 
 taxonomies = [
-  { name = "categories", feed = true },
+  # { name = "categories", feed = true },
   { name = "tags", feed = true },
 ]
 
@@ -56,5 +56,5 @@ name = "blog"
 url = "@/blog/_index.md"
 
 [[extra.main_menu]]
-name = "projects"
-url = "@/projects/_index.md"
+name = "github"
+url = "https://github.com/wr4ng"

@@ -2,11 +2,11 @@
 title = "Cold Wars: Return of the Emperor"
 date = 2025-01-23
 description = "A Unity multiplayer game using tuple-spaces for communication"
-
-[extra]
-github = "https://github.com/wr4ng/cold-wars-return-of-the-emperor"
-technologies = ["Unity", "C#"]
+taxonomies.tags = ["Unity", "C-sharp"]
 +++
+
+TODO: 
+`https://github.com/wr4ng/cold-wars-return-of-the-emperor`
 
 A multiplayer game built for the DTU (Technical University of Denmark) course
 **02148 Introduction to Coordination in Distributed Applications** ([course info](https://kurser.dtu.dk/course/02148))
