@@ -1,5 +1,4 @@
 +++
-title = "wrang.dev"
 +++
 
 ## about

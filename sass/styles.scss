@@ -4,47 +4,10 @@ $link-color: #aa95f5;
 $code-background: #282a36;
 $table-header-background: rgba(255, 255, 255, 0.065);
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
 body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-  flex-shrink: 0;
-  padding: 20px;
-  text-align: center;
-}
-
-html {
-  overflow-y: scroll;
-  height: 100%;
-  font: 100%/1.5 sans-serif;
-  font-family: "Roboto";
-  word-wrap: break-word;
-  margin: 0 auto;
-  padding: 1.5em;
-  padding-bottom: 0;
+  font-family: "Inter";
   background-color: $primary-background;
   color: $text-color;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 125%;
-    max-width: 42em;
-  }
 }
 
 h1,
@@ -65,54 +28,6 @@ a:active {
   text-decoration: underline;
 }
 
-p {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  line-height: 1.5;
-}
-
-ol,
-ul {
-  margin: 1em;
-  margin-top: 0.5em;
-}
-
-ol li ol,
-ol li ul,
-ul li ol,
-ul li ul {
-  margin: 0 2em;
-}
-
-ol li p,
-ul li p {
-  margin: 0;
-}
-
-dl {
-  font-family: monospace, monospace;
-}
-
-dl dt {
-  font-weight: bold;
-}
-
-dl dd {
-  margin: -1em 0 1em 1em;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 8px;
-}
-
-blockquote {
-  padding-left: 1em;
-  font-style: italic;
-  border-left: solid 2px $link-color;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -121,7 +36,7 @@ table {
 th,
 td {
   border: 1px solid #666;
-  padding: 8px 12px;
+  padding: 4px 8px;
   text-align: left;
   vertical-align: middle;
 }
@@ -129,47 +44,6 @@ td {
 th {
   font-weight: bold;
   background-color: $table-header-background;
-}
-
-// Classes to manually set alignment
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.title {
-  font-size: 2.5em;
-  margin-bottom: 0;
-}
-
-.subtitle {
-  font-weight: normal;
-  font-size: 0.75em;
-  color: #666;
-}
-
-.tags {
-  margin-top: -1.5rem;
-  padding-bottom: 1.5em;
-}
-
-.tags li {
-  display: inline;
-  margin-right: 0.5em;
-}
-
-figure {
-  margin: 1em 0;
-}
-
-figure figcaption {
-  font-family: monospace, monospace;
-  font-size: 0.75em;
-  text-align: center;
-  color: grey;
 }
 
 .footnote-definition sup {
@@ -186,18 +60,6 @@ figure figcaption {
 
 .footnote-definition .footnote-body p:only-child {
   margin: 0.2em 0;
-}
-
-header a + a {
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-.post-date {
-  font-family: monospace, monospace;
-  vertical-align: middle;
-  padding-right: 2rem;
-  margin: 0;
 }
 
 .zola-anchor {
@@ -219,6 +81,7 @@ code {
   color: #f8f8f2;
   font-family: "JetBrains Mono", monospace;
   font-style: normal;
+  background-color: $code-background;
 }
 
 pre code {
@@ -241,63 +104,8 @@ code {
   border-radius: 4px;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-}
-
-header nav .logo img {
-  height: 28px;
-  width: auto;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-header nav .logo {
-  display: flex;
-  align-items: center;
-}
-
-#reading-progress {
-  position: fixed;
-  width: 100%;
-  height: 5px;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-}
-
-#reading-progress-fill {
-  height: 3px;
-  border-radius: 3px;
-  width: 0;
-  /* Theme */
-  -webkit-transition: width 100ms ease;
-  -o-transition: width 100ms ease;
-  transition: width 100ms ease;
-  background-color: $link-color;
-}
-
-/* Copy button styling */
-.copy-button {
-  background-color: #1c1e26;
-  color: $text-color;
-  border: none;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  font-family: "JetBrains Mono", monospace;
-  padding: 0.3em 0.6em;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.copy-button:hover {
-  background-color: #393c4d;
-}
-
-.footnote-reference {
+nav a,
+.footnote-reference a {
   font-weight: bold;
 }
 
