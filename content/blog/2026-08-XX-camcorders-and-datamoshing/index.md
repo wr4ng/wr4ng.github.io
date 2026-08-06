@@ -2,6 +2,7 @@
 title = "Camcorders and Datamoshing"
 date = 2026-07-29
 description = ""
+draft = true
 +++
 
 So, I bought two camcorders.

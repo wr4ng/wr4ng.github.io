@@ -3,6 +3,7 @@ title = "climb.it"
 date = 2023-06-20
 description = "Climbing/bouldering companion app using Flutter and Firebase."
 taxonomies.tags = ["Flutter", "Firebase"]
+draft = true
 +++
 
 `https://github.com/Skysub/climb.it`
