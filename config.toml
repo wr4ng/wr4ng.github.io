@@ -38,6 +38,7 @@ theme = "catppuccin-mocha"
 paths_keep_dates = true
 
 [extra]
+hide_made_with_line = true
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = true
 language_switcher = false
