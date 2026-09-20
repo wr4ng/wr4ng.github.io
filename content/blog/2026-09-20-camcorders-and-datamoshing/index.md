@@ -1,8 +1,9 @@
 +++
 title = "Camcorders and Datamoshing"
-date = 2026-07-29
-description = ""
-draft = true
+date = 2026-09-20
+description = "Having fun with camcorders and experimenting with datamoshing"
+[taxonomies]
+tags=["video"]
 +++
 
 So, I bought two camcorders.
@@ -29,6 +30,8 @@ What am I using them for? A travel vlog for my friends from our trip to the Faro
 
 **TODO: INSERT IMAGES*
 
+{{ resize_image(path="camcorders.png", width=1041, op="fit_width", format="webp", alt="photo of the two camcorders") }}
+
 Here is a short overview of the great capabilities of these artifacts:
 
 | Property     |  Sony DCR-SX30 |              Sony CX240 |
@@ -51,7 +54,7 @@ ffmpeg -i "input.mts" -c:v copy -c:a aac -b:a 192k -sn "output.mp4"
 
 The files from the Sony DCR-SX30 need a little more work. But `ffmpeg` comes to the rescue again:
 ```shell
-    ffmpeg -i "input.mp4" -c:v libx264 -crf 18 -preset medium -c:a aac -b:a 192k "output.mp4"
+ffmpeg -i "input.mp4" -c:v libx264 -crf 18 -preset medium -c:a aac -b:a 192k "output.mp4"
 ```
 
 I did not play around the the `libx264` encoder settings. You could probably get closer to the *original quality*,
@@ -90,7 +93,10 @@ Do this for all I-frames and then export the video and voilà, you have a datamo
 
 Here is an example from the intro of my travel vlog:
 
-**TODO: INSERT GIF**
+![Result GIF](./result.gif)
+
+The results varied depending on the transition between clips. This is something you have to play with
+to get it to look the way you want. I found it to be good enough for the effect I wanted to achieve.
 
 # Conclusion
 
