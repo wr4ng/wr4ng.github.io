@@ -2,6 +2,14 @@
 
 My portfolio and blog created using `zola`. Deployed through Github Pages.
 
+# Theme
+
+I use the `bear` zola theme. It is included in the repo as a git submodule.
+After cloning this repo it can be pulled down locally to use it using:
+```shell
+git submodule update --init --recursive
+```
+
 # Nix shell
 
 Dependencies needed to run the project are declared in `flake.nix`.
