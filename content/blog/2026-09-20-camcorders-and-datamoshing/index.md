@@ -28,8 +28,6 @@ Yeah I might have a problem.
 Anyway, I bought a Sony DCR-SX30, originally released in 2009, and a Sony CX240, released in 2014. They both look *hella* cool.
 What am I using them for? A travel vlog for my friends from our trip to the Faroe Islands. Okay, here there are:
 
-**TODO: INSERT IMAGES*
-
 {{ resize_image(path="camcorders.png", width=1041, op="fit_width", format="webp", alt="photo of the two camcorders") }}
 
 Here is a short overview of the great capabilities of these artifacts:
